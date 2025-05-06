@@ -1,3 +1,6 @@
+import '../app/animation.css';
+
+
 export default function Header() {
     const sections = [
         "Home", "About", "Contacts", "Get started", "Info"
@@ -12,7 +15,7 @@ export default function Header() {
                 <nav className="text-xs lg:text-base flex-1 flex justify-center space-x-10 lg:space-x-30 font-[200]">
                     {sections.map((section, index) => (
                         <ol key={index}>
-                            <li>{section}</li>
+                            <li className="hover-underline-animation cursor-pointer">{section}</li>
                         </ol>
                     ))}
                 </nav>
