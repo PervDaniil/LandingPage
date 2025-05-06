@@ -12,7 +12,7 @@ export default function Header() {
                 <div>
                     <h2 className="hidden lg:block font-bold">Landing Kg</h2>
                 </div>
-                <nav className="text-xs lg:text-base flex-1 flex justify-center space-x-10 lg:space-x-30 font-[200]">
+                <nav className="text-nowrap text-xs lg:text-base flex-1 flex justify-center space-x-10 lg:space-x-30 font-[200]">
                     {sections.map((section, index) => (
                         <ol key={index}>
                             <li className="hover-underline-animation cursor-pointer">{section}</li>
